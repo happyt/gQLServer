@@ -52,7 +52,8 @@ module.exports = {
                 throw new UserInputError('Errors', { errors })
             }
             // todo make sure user isn't there already
-            const user = User.findOne({ username })
+            const user = await User.findOne({ username })
+            console.log(user)
             if (user) {
                 throw new UserInputError('Username is already taken', {
                     errors: {
