@@ -5,3 +5,4 @@ He makes a server, then a React front end. Also has a typescript lesson
 
 TODO When deleting comment, should check that the commentId is valid, ie index > 0
 
+It uses mongoDB Atlas
